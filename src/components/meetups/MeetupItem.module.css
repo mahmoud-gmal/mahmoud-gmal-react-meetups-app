@@ -1,0 +1,99 @@
+.item {
+  margin: 1rem 0;
+}
+
+.image {
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.content h3 {
+  font-size: 1.25rem;
+  color: #2c292b;
+}
+
+.actions {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  color: #77002e;
+  border: 1px solid #77002e;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #ffe2ed;
+}
+
+button {
+  margin-left: 5px;
+}
+
+.actions .delete_btn {
+  background: #c41919;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.actions .delete_btn:hover {
+  background: #ee0505;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.actions .edit_btn {
+  background: #3775af;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #3775af;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.actions .edit_btn:hover {
+  background: #1c8af0;
+  color: #fff;
+  border: 1px solid #3775af;
+}
+
+/* meetup buttons responsive*/
+
+@media only screen and (max-width: 564px) {
+  .actions {
+    padding: 1rem;
+  }
+  .actions button, .actions .edit_btn {
+    padding: 0.5rem 0.8rem;
+  }
+}
+@media only screen and (max-width: 471px) {
+  .actions {
+   display: flex ;
+   flex-direction: column;
+   grid-gap: 10px;
+  }
+  /* .actions button, .actions .edit_btn {
+    padding: 0.5rem 0.8rem;
+  } */
+}

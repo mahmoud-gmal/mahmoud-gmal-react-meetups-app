@@ -1,0 +1,168 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #302f30;
+  padding: 0 10%;
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.header li {
+  margin-left: 2rem;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: white;
+}
+
+.badge {
+  background-color: #cc2062;
+  color: white;
+  border-radius: 12px;
+  padding: 0 1rem;
+  margin-left: 0.3rem;
+}
+/* .favicon{
+  width: 28px;
+  filter: invert(1);
+} */
+
+.btn_logout {
+  font: inherit;
+  cursor: pointer;
+  background-color: #77002e;
+  color: white;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border: 0;
+}
+
+.user_bt {
+  font: inherit;
+  color: white;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border: 0;
+}
+
+/* active link style */
+nav ul li a {
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+/* nav ul li a::after {
+  position: absolute;
+  width: calc(100% - 20px);
+  height: 2.5px;
+  content: "";
+  background-color: transparent;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s linear;
+}
+nav ul li a:hover::after {
+  background-color: #fff;
+} */
+nav ul li a.active {
+  color: #fff;
+  /* font-size: 40px; */
+}
+
+/* Responsive style  */
+
+@media only screen and (max-width: 1200px) {
+  header div {
+    font-size: 1.4rem !important;
+  }
+  nav ul li {
+    margin-left: 1.6rem !important;
+  }
+  nav ul li a {
+    font-size: 0.99rem !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav ul li {
+    margin-left: 1.2rem !important;
+  }
+  header div {
+    font-size: 1.1rem !important;
+  }
+  header {
+    padding: 0 5% !important;
+  }
+
+  nav ul li a {
+    font-size: 0.95rem !important;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  header {
+    flex-direction: column;
+    justify-content: center !important;
+    height: 7rem !important;
+  }
+  .logo {
+    border-bottom: 1px solid;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  header {
+    padding: 0 0 !important;
+  }
+  nav ul li {
+    margin-left: 0.3rem !important;
+    margin-right: 0.3rem !important;
+  }
+  nav ul li a {
+    font-size: 0.75rem !important;
+  }
+  .btn_logout {
+    margin: 0 !important;
+  }
+  .user_bt,
+  .btn_logout {
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  nav ul {
+    flex-direction: column !important;
+  }
+  nav ul li {
+    margin-bottom: 6px;
+  }
+  header {
+    height: 14rem !important;
+  }
+}
