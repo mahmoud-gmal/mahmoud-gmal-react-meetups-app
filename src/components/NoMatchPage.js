@@ -8,7 +8,7 @@ export const NoMatchPage = () => {
 
   return (
     <section>
-      <h1 style={mystyle}>NOT FOUND!</h1>
+      <h2 style={mystyle}>NOT FOUND!</h2>
     </section>
   );
 };
